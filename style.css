@@ -1,0 +1,137 @@
+
+#bloc_page
+{
+	width: 50%
+	margin:auto;
+}
+body
+{
+	font-family: 'Raleway', serif;
+	background-color: #FDFEFE;
+	color: black;
+	font-size: 0.8em;
+}
+h2
+{
+	font-weight: bold;
+	font-size: 1.8em;
+}
+/*header*/
+header
+{
+	display: flex;
+	justify-content: space-between;
+	border:10px blue solid;
+}
+#titre_principal
+{
+	display: flex;
+	position: relative;
+	width: 20%
+	height:auto;
+	border: 5px red solid;
+}
+#logo
+{
+	width: 35%;
+	height: auto;
+	margin: auto;
+
+}
+nav
+{
+	display: flex;
+	position: relative;
+	justify-content: flex-end;
+	width: 80%;
+	height: auto;
+	margin: 2% 1% 0% 10%;
+	border: 5px yellow solid;
+}
+nav ul
+{
+	list-style-type: none;
+}
+nav li
+{
+	display: inline-block;
+/*section recherche*/
+}
+.recherche
+{
+	border:10px red solid;
+}
+/*section hébergements*/
+.hebergements
+{
+	border: 10px grey solid;
+	display: flex;
+	justify-content: space-between;
+}
+
+#hebergement_marseille
+{
+	display: flex;
+	flex-direction: column;
+	border:10px yellow solid;
+	width: 80%;
+	height: auto;
+	margin: 10px;
+}
+#titre_hebergement
+{
+	display: flex;
+	position: relative;
+}
+#hebergement1
+{
+	display: flex;
+	position: relative;
+	justify-content: center;
+}
+#hebergement2
+{display: flex;
+position: relative;
+justify-content: center;
+}
+#photo1, #photo2, #photo3, #photo4, #photo5, #photo6
+{
+	width: 60%;
+	height: auto;
+}
+
+#p1, #p2, #p3, #p4, #p5, #p6
+{
+	display: inline-flex;
+}
+aside
+{
+	border:10px black solid;
+	display: flex;
+	justify-content: flex-end;
+	flex-direction: column;
+	width: 20%;
+	height: auto;
+	margin: 10px;
+
+}
+#titre_populaire
+{
+	display: flex;
+	position: relative;
+}
+.photoaside
+{
+	width: 180px;
+	height: auto;
+}
+#afficher_plus
+{
+	display: flex;
+	position: relative;
+}
+/*section activité*/
+.activites
+{
+	border: 10px green solid; 
+}

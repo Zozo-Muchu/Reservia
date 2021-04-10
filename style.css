@@ -7,7 +7,6 @@
 body
 {
 	font-family: 'Raleway', serif;
-	background-color: #FDFEFE;
 	color: black;
 	font-size: 0.8em;
 }
@@ -21,7 +20,6 @@ header
 {
 	display: flex;
 	justify-content: space-between;
-	border:10px blue solid;
 }
 #titre_principal
 {
@@ -29,7 +27,6 @@ header
 	position: relative;
 	width: 20%
 	height:auto;
-	border: 5px red solid;
 }
 #logo
 {
@@ -46,7 +43,6 @@ nav
 	width: 80%;
 	height: auto;
 	margin: 2% 1% 0% 10%;
-	border: 5px yellow solid;
 	padding: 0px;
 }
 nav ul
@@ -63,25 +59,29 @@ nav li
 	border:10px red solid;
 }
 /*section hébergements*/
-.hebergements
+#ancre_hebergement
 {
-	border: 10px grey solid;
+	background-color: white;
 	display: flex;
 	justify-content: space-between;
-	background-color: #F2F2F2;
 }
-
+.hebergements h6
+{
+	color: white;
+}
 #hebergement_marseille
 {
 	display: flex;
 	flex-direction: column;
-	border:10px yellow solid;
 	width: 60%;
 	height: auto;
-	margin: 10px;
+	margin: 5px;
+	background-color: #F2F2F2;
+
 }
 #titre_hebergement
 {
+	background-color: #F2F2F2;
 	display: flex;
 	position: relative;
 }
@@ -92,170 +92,76 @@ nav li
 	justify-content: space-around;
 	width: 100%;
 	height: 200px;
-	border:5px black solid;
 }
 #hebergement2
-{display: flex;
-position: relative;
-justify-content: space-around;
-width: 100%;
-height: 200px;
-border: 5px green solid;
-}
-#p1
 {
-	 border:5px red solid;
+	display: flex;
+	position: relative;
+	justify-content: space-around;
+	width: 100%;
+	height: 200px;
+}
+#p1, #p2, #p3, #p4, #p5, #p6
+{
+	 background-color: white;
 	 width: 100%
 	 height:60px;
-	 margin: 3px;
+	 margin: 5px;
 }
-#p1-img
+#p1-img, #p2-img, #p3-img, #p4-img, #p5-img, #p6-img
 {
 	width:180px;
 	height: 120px;
+	background-color: white;
 }
-#p2
-{
-	 border:5px red solid;
-	 width: 100%
-	 height:60px;
-	 margin: 3px;
-}
-#p2-img
-{
-	width:180px;
-	height: 120px;
-}
-#p3
-{
-	 border:5px red solid;
-	 width: 100%
-	 height:60px;
-	 margin: 3px;
-}
-#p3-img
-{
-	width:180px;
-	height: 120px;
-}
-#p4
-{
-	 border:5px red solid;
-	 width: 100%
-	 height:60px;
-	 margin: 3px;
-}
-#p4-img
-{
-	width:180px;
-	height: 120px;
-}
-#p5
-{
-	 border:5px red solid;
-	 width: 100%
-	 height:60px;
-	 margin: 3px;
-}
-#p5-img
-{
-	width:180px;
-	height: 120px;
-}
-#p6
-{
-	 border:5px red solid;
-	 width: 100%
-	 height:60px;
-	 margin: 3px;
-}
-#p6-img
-{
-	width:180px;
-	height: 120px;
-}
-
 aside
 {
-	border:5px black solid;
 	width: 35%;
 	height: 555px;
 	margin: 10px;
 	background-color: #F2F2F2;
 }
-#p7
+#p7, #p8, #p9
 {
-	border:5px blue solid;
+	background-color: white;
 	display: flex;
 	width: 90%;
 	height:130px;
 	margin: 15px;
 }
-#p7-img
+#p7-img, #p8-img, #p9-img
 {
-	width:120px;
+	width:115px;
 	height: 130px;
-	border: 5px yellow solid;
 	position: relative;
 }
 #block-descript7
 {
 	position: relative;
-	left: 130px;
+	left: 136px;
 	top : -143px;
-	border: 5px green solid;
 	width: 78%;
 	height: 126px;
 }
-#p8
-{
-	border:5px red solid;
-	display: flex;
-	flex-direction: row;
-	width: 90%;
-	height:130px;
-	margin: 15px;
-}
-#p8-img
-{
-	width:120px;
-	height: 130px;
-}
 #block-descript8
 {
-	border: 5px green solid;
 	position: relative;
-	left: 120px;
-	top: -135px;
+	left: 136px;
+	top: -146px;
 	width: 100%;
 	height: 126px;
 }
-#p9
-{
-	border:5px blue solid;
-	display: flex;
-	flex-direction: row;
-	width: 90%;
-	height:130px;
-	margin: 15px;
-}
-#p9-img
-{
-	width:120px;
-	height: 130px;
-}
 #block-descript9
 {
-	border: 5px green solid;
 	position: relative;
-	left: 120px;
-	top: -135px;
+	left: 136px;
+	top: -148px;
 	width: 83%;
 	height: 126px;
 }
 #titre_populaires
 {
-	border:2px blue solid;
+	background-color: #F2F2F2;
 	display: inline-block;
 	width: 70%;
 	height: auto;
@@ -263,7 +169,7 @@ aside
 }
 #logo-pop
 {
-	border:5px red solid;
+	background-color: #F2F2F2;
 	display: inline-block;
 	width: 10%;
 	height: auto;
@@ -277,16 +183,42 @@ aside
 /*section activité*/
 .activites
 {
-	border: 10px green solid; 
-}
-
-#block-img10, #block-img11, #block-img12, #block-img13, #block-img14, #block-img15
-{
-	border:5px green solid;
+	background-color: white; 
 }
 #photo10, #photo11x12, #photo13, #photo14x15
 {
-	border: 5px blue solid;
+	width: 245px;
+	height: auto;
+}
+#photo12
+{
+	position: relative;
+	bottom: -100px;
+}
+#photo15
+{
+	position: relative;
+	bottom: -105px;
+}
+#block-11
+{
+	position: relative;
+	bottom: -46px;
+}
+#block-15
+{
+	position: relative;
+	bottom: -48px;
+}
+#block-descript13
+{
+	position: relative;
+	bottom: -6px;
+}
+#photo10, #photo11, #photo12, #photo13, #photo14, #photo15
+{
+	background-color: white;
+	margin: 10px;
 }
 .activites h2
 {
@@ -298,22 +230,20 @@ aside
 }
 #p10-img, #p13-img
 {
-	border:5px red solid;
 	width: 100%;
 	height: auto;
 }
 #p11-img, #p12-img, #p14-img, #p15-img
 {
-	border: 5px red solid;
 	width: 100%;
 	height: auto;
 }
 /*section footer*/
 footer
 {
-	border: 5px black solid;
 	display: flex;
 	justify-content: space-around;
+	background-color: #F2F2F2;
 
 }
 footer h2

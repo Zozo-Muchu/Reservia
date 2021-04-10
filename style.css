@@ -1,7 +1,7 @@
 
 #bloc_page
 {
-	width: 50%
+	width: 980px;
 	margin:auto;
 }
 body
@@ -14,7 +14,7 @@ body
 h2
 {
 	font-weight: bold;
-	font-size: 1.8em;
+	font-size: 1.2em;
 }
 /*header*/
 header
@@ -47,6 +47,7 @@ nav
 	height: auto;
 	margin: 2% 1% 0% 10%;
 	border: 5px yellow solid;
+	padding: 0px;
 }
 nav ul
 {
@@ -67,6 +68,7 @@ nav li
 	border: 10px grey solid;
 	display: flex;
 	justify-content: space-between;
+	background-color: #F2F2F2;
 }
 
 #hebergement_marseille
@@ -74,7 +76,7 @@ nav li
 	display: flex;
 	flex-direction: column;
 	border:10px yellow solid;
-	width: 80%;
+	width: 60%;
 	height: auto;
 	margin: 10px;
 }
@@ -87,51 +89,250 @@ nav li
 {
 	display: flex;
 	position: relative;
-	justify-content: center;
+	justify-content: space-around;
+	width: 100%;
+	height: 200px;
+	border:5px black solid;
 }
 #hebergement2
 {display: flex;
 position: relative;
-justify-content: center;
+justify-content: space-around;
+width: 100%;
+height: 200px;
+border: 5px green solid;
 }
-#photo1, #photo2, #photo3, #photo4, #photo5, #photo6
+#p1
 {
-	width: 60%;
-	height: auto;
+	 border:5px red solid;
+	 width: 100%
+	 height:60px;
+	 margin: 3px;
+}
+#p1-img
+{
+	width:180px;
+	height: 120px;
+}
+#p2
+{
+	 border:5px red solid;
+	 width: 100%
+	 height:60px;
+	 margin: 3px;
+}
+#p2-img
+{
+	width:180px;
+	height: 120px;
+}
+#p3
+{
+	 border:5px red solid;
+	 width: 100%
+	 height:60px;
+	 margin: 3px;
+}
+#p3-img
+{
+	width:180px;
+	height: 120px;
+}
+#p4
+{
+	 border:5px red solid;
+	 width: 100%
+	 height:60px;
+	 margin: 3px;
+}
+#p4-img
+{
+	width:180px;
+	height: 120px;
+}
+#p5
+{
+	 border:5px red solid;
+	 width: 100%
+	 height:60px;
+	 margin: 3px;
+}
+#p5-img
+{
+	width:180px;
+	height: 120px;
+}
+#p6
+{
+	 border:5px red solid;
+	 width: 100%
+	 height:60px;
+	 margin: 3px;
+}
+#p6-img
+{
+	width:180px;
+	height: 120px;
 }
 
-#p1, #p2, #p3, #p4, #p5, #p6
-{
-	display: inline-flex;
-}
 aside
 {
-	border:10px black solid;
-	display: flex;
-	justify-content: flex-end;
-	flex-direction: column;
-	width: 20%;
-	height: auto;
+	border:5px black solid;
+	width: 35%;
+	height: 555px;
 	margin: 10px;
-
+	background-color: #F2F2F2;
 }
-#titre_populaire
+#p7
 {
+	border:5px blue solid;
 	display: flex;
+	width: 90%;
+	height:130px;
+	margin: 15px;
+}
+#p7-img
+{
+	width:120px;
+	height: 130px;
+	border: 5px yellow solid;
 	position: relative;
 }
-.photoaside
+#block-descript7
 {
-	width: 180px;
+	position: relative;
+	left: 130px;
+	top : -143px;
+	border: 5px green solid;
+	width: 78%;
+	height: 126px;
+}
+#p8
+{
+	border:5px red solid;
+	display: flex;
+	flex-direction: row;
+	width: 90%;
+	height:130px;
+	margin: 15px;
+}
+#p8-img
+{
+	width:120px;
+	height: 130px;
+}
+#block-descript8
+{
+	border: 5px green solid;
+	position: relative;
+	left: 120px;
+	top: -135px;
+	width: 100%;
+	height: 126px;
+}
+#p9
+{
+	border:5px blue solid;
+	display: flex;
+	flex-direction: row;
+	width: 90%;
+	height:130px;
+	margin: 15px;
+}
+#p9-img
+{
+	width:120px;
+	height: 130px;
+}
+#block-descript9
+{
+	border: 5px green solid;
+	position: relative;
+	left: 120px;
+	top: -135px;
+	width: 83%;
+	height: 126px;
+}
+#titre_populaires
+{
+	border:2px blue solid;
+	display: inline-block;
+	width: 70%;
+	height: auto;
+	margin: 15px;
+}
+#logo-pop
+{
+	border:5px red solid;
+	display: inline-block;
+	width: 10%;
 	height: auto;
 }
 #afficher_plus
 {
 	display: flex;
 	position: relative;
+	bottom: -30px;
 }
 /*section activité*/
 .activites
 {
 	border: 10px green solid; 
+}
+
+#block-img10, #block-img11, #block-img12, #block-img13, #block-img14, #block-img15
+{
+	border:5px green solid;
+}
+#photo10, #photo11x12, #photo13, #photo14x15
+{
+	border: 5px blue solid;
+}
+.activites h2
+{
+	margin: 15px;
+}
+#block-activite
+{
+	display: flex;
+}
+#p10-img, #p13-img
+{
+	border:5px red solid;
+	width: 100%;
+	height: auto;
+}
+#p11-img, #p12-img, #p14-img, #p15-img
+{
+	border: 5px red solid;
+	width: 100%;
+	height: auto;
+}
+/*section footer*/
+footer
+{
+	border: 5px black solid;
+	display: flex;
+	justify-content: space-around;
+
+}
+footer h2
+{
+	display: flex;
+	position: relative;
+	right:-40px;
+}
+footer li
+{
+	list-style-type: none;
+}
+/*Media queries*/
+@media all and(min-width: 1020px)
+{
+	#bloc_page
+		{
+			width: 760px;
+			height: auto;
+			margin: auto;
+		}
 }

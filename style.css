@@ -425,7 +425,7 @@ aside
 {
 	background-color: white; 
 }
-#photo10, #photo11x12, #photo13, #photo14x15
+#photo11x12, #photo13
 {
 	width: 25%;
 	height: auto;
@@ -435,6 +435,7 @@ aside
 {
 	width: 25%;
 	height: 400px;
+	margin:5px;
 	display: flex;
 	position: relative;
 }
@@ -447,28 +448,80 @@ aside
 }
 #block-descript10, #block-descript13
 {
-	border: 5px green solid;
 	display: flex;
 	position: relative;
+	font-size: 1.1em;
+	top: 105%;
 }
 #block-descript11, #block-descript12, #block-descript14, #block-descript15
 {
-	border:5px red solid;
 	display: flex;
 	position: relative;
+	font-size: 1.1em;
+	top:115%;
+
 }
 #photo10, #photo11, #photo12, #photo13, #photo14, #photo15
 {
-	border:5px blue solid;
 	margin: 10px;
 	border-radius: 20px;
 	box-shadow:  2px 2px 2px rgba(128,128,128,0.1);
 }
 #photo10 a
 {
-	background-image: url("image_acivite/10.jpg");
+	background-image: url("image-activite/10.jpg");
 	width: 100%;
-	height: 60%;
+	height: 85%;
+	background-size: cover;
+	background-position: center;
+	border-radius: 15px 15px 0 0;
+	position: relative;
+}
+#photo11 a
+{
+	background-image: url("image-activite/11.jpg");
+	width: 100%;
+	height: 68%;
+	background-size: cover;
+	background-position: center;
+	border-radius: 15px 15px 0 0;
+	position: relative;
+}
+#photo12 a
+{
+	background-image: url("image-activite/12.jpg");
+	width: 100%;
+	height: 68%;
+	background-size: cover;
+	background-position: center;
+	border-radius: 15px 15px 0 0;
+	position: relative;
+}
+#photo13 a
+{
+	background-image: url("image-activite/13.jpg");
+	width: 100%;
+	height: 85%;
+	background-size: cover;
+	background-position: center;
+	border-radius: 15px 15px 0 0;
+	position: relative;
+}
+#photo14 a
+{
+	background-image: url("image-activite/14.jpg");
+	width: 100%;
+	height: 68%;
+	background-size: cover;
+	background-position: center;
+	border-radius: 15px 15px 0 0;
+	position: relative;
+}
+#photo15 a
+{
+	background-image: url("image-activite/15.jpg");
+	width: 100%;
+	height: 68%;
 	background-size: cover;
 	background-position: center;
 	border-radius: 15px 15px 0 0;
@@ -477,16 +530,10 @@ aside
 .activites h2
 {
 	margin: 15px;
-	border: 5px yellow solid;
 }
 #block-activite
 {
 	display: flex;
-	border: 5px olive solid;
-}
-#ancre_activites
-{
-	border:5px cyan solid;
 }
 /*section footer*/
 footer

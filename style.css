@@ -425,7 +425,7 @@ aside
 {
 	background-color: white; 
 }
-#photo11x12, #photo13
+#photo11x12, #photo14x15
 {
 	width: 25%;
 	height: auto;
@@ -450,15 +450,17 @@ aside
 {
 	display: flex;
 	position: relative;
-	font-size: 1.1em;
+	font-size: 1em;
 	top: 105%;
+	padding-left: 7%;
 }
 #block-descript11, #block-descript12, #block-descript14, #block-descript15
 {
 	display: flex;
 	position: relative;
-	font-size: 1.1em;
-	top:115%;
+	font-size: 1em;
+	top:120%;
+	padding-left: 7%;
 
 }
 #photo10, #photo11, #photo12, #photo13, #photo14, #photo15
@@ -476,6 +478,7 @@ aside
 	background-position: center;
 	border-radius: 15px 15px 0 0;
 	position: relative;
+	color: black;
 }
 #photo11 a
 {
@@ -486,6 +489,7 @@ aside
 	background-position: center;
 	border-radius: 15px 15px 0 0;
 	position: relative;
+	color: black;
 }
 #photo12 a
 {
@@ -496,6 +500,7 @@ aside
 	background-position: center;
 	border-radius: 15px 15px 0 0;
 	position: relative;
+	color: black;
 }
 #photo13 a
 {
@@ -506,6 +511,7 @@ aside
 	background-position: center;
 	border-radius: 15px 15px 0 0;
 	position: relative;
+	color: black;
 }
 #photo14 a
 {
@@ -516,6 +522,7 @@ aside
 	background-position: center;
 	border-radius: 15px 15px 0 0;
 	position: relative;
+	color: black;
 }
 #photo15 a
 {
@@ -526,6 +533,7 @@ aside
 	background-position: center;
 	border-radius: 15px 15px 0 0;
 	position: relative;
+	color: black;
 }
 .activites h2
 {

@@ -362,7 +362,6 @@ aside
 	background-position: center;
 	border-radius: 15px 0 0 15px;
 	position: relative;
-	border: 5px red solid;
 }	
 #block-descript7, #block-descript8, #block-descript9
 {
@@ -373,7 +372,6 @@ aside
 	padding-top: 15%;
 	border-radius: 0 15px 15px 0;
 	height: 80%;
-	border:5px green solid;
 }
 .etoile-pleine2
 {

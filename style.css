@@ -4,6 +4,10 @@
 	width: 980px;
 	margin:auto;
 }
+.recherche, #ancre_hebergement, #ancre_activites
+{
+	margin: auto;
+}
 body
 {
 	font-family: 'Raleway', serif;
@@ -30,6 +34,7 @@ header
 	position: relative;
 	width: 20%;
 	height:auto;
+	margin-left: 1.4%;
 }
 #logo
 {
@@ -45,9 +50,8 @@ nav
 	justify-content: flex-end;
 	width: 80%;
 	height: auto;
-	margin: 2% 1% 0% 10%;
-	padding: 0px;
-
+	margin: 2% 0 0 10%;
+	padding: 0;
 }
 nav ul
 {
@@ -59,7 +63,7 @@ nav ul
 	color: black;
 	margin-right: 18px;
 	font-size: 1em;
-	padding: 15px;
+	padding: 0;
 }
 #nav-activite
 {
@@ -67,7 +71,7 @@ nav ul
 	margin-left:18px; 
 	margin-right:18px;
 	font-size: 1em;
-	padding: 15px;
+	padding: 0;
 }
 #nav-inscrire
 {
@@ -75,7 +79,7 @@ nav ul
 	margin-left: 18px;
 	margin-right:36px;
 	font-size: 1em;
-	padding: 15px;
+	padding: 0;
 }
 nav li
 {
@@ -88,6 +92,11 @@ nav li
 	border-top:3px #0065FC solid;
 }
 /*section recherche*/
+.recherche
+{
+	width: 95%;
+	height: auto;
+}
 .recherche h2
 {
 	color: black;
@@ -102,7 +111,7 @@ nav li
 }
 #formulaire1
 {
-	width: 35%;
+	width: 50%;
 	height: auto;
 }
 #logo-map
@@ -159,7 +168,7 @@ nav li
 {
 	color: #0065FC;
 	background-color:#DEEBFF;
-	border-radius:15px; 
+	border-radius:100%; 
 	padding: 5px;
 }
 #bouton-eco, #bouton-familial, #bouton-romantique, #bouton-animaux
@@ -184,6 +193,8 @@ nav li
 	background-color: white;
 	display: flex;
 	justify-content: space-between;
+	width: 95%;
+	height: auto;
 }
 #ancre_hebergement h6
 {
@@ -226,6 +237,7 @@ nav li
 	 border-radius: 20px;
 	display: flex;
 	background-color: white;
+	box-shadow:  2px 2px 2px rgba(128,128,128,0.1)
 }
 
 #p1 a
@@ -317,7 +329,7 @@ aside
 {
 	width: 35%;
 	height: auto;
-	margin: 10px;
+	margin: 5px;
 	background-color: #F2F2F2;
 	border-radius: 20px;
 	padding: 10px;
@@ -331,6 +343,7 @@ aside
 	padding: 5px;
 	margin: 15px;
 	border-radius: 20px;
+	box-shadow:  2px 2px 2px rgba(128,128,128,0.1)
 }
 #p7 a
 {
@@ -421,27 +434,31 @@ aside
 	text-decoration: underline;
 }
 /*section activité*/
-.activites
+#ancre_activites
 {
-	background-color: white; 
+	width: 95%;
+	height: auto;
+	padding:20px 0 20px 0;
+}
+#block-activite
+{
+	display:flex;
+	justify-content: space-between;
 }
 #photo11x12, #photo14x15
 {
-	width: 25%;
+	width: 23%;
 	height: auto;
-	margin:5px;
 }
 #photo10, #photo13
 {
-	width: 25%;
-	height: 400px;
-	margin:5px;
+	width: 23%;
+	height: auto;
 	display: flex;
-	position: relative;
 }
 #photo11, #photo12, #photo14, #photo15
 {
-	width: 90%;
+	width: 100%;
 	height: 187px;
 	display: flex;
 	position: relative;
@@ -465,7 +482,6 @@ aside
 }
 #photo10, #photo11, #photo12, #photo13, #photo14, #photo15
 {
-	margin: 10px;
 	border-radius: 20px;
 	box-shadow:  2px 2px 2px rgba(128,128,128,0.1);
 }

@@ -50,8 +50,8 @@ nav
 	justify-content: flex-end;
 	width: 80%;
 	height: auto;
-	margin: 2% 0 0 10%;
-	padding: 0;
+	margin: 0 0 0 10%;
+	padding: 1% 0 0 0;
 }
 nav ul
 {
@@ -63,7 +63,7 @@ nav ul
 	color: black;
 	margin-right: 18px;
 	font-size: 1em;
-	padding: 0;
+	padding-top: 18%;
 }
 #nav-activite
 {
@@ -72,6 +72,7 @@ nav ul
 	margin-right:18px;
 	font-size: 1em;
 	padding: 0;
+	padding-top: 18%;
 }
 #nav-inscrire
 {
@@ -80,6 +81,7 @@ nav ul
 	margin-right:36px;
 	font-size: 1em;
 	padding: 0;
+	padding-top: 18%;
 }
 nav li
 {

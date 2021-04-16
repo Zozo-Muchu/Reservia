@@ -320,12 +320,13 @@ nav li
 }
 .etoile-vide
 {
-	color: #F2F2F2;
+	color: rgba(144, 148, 151, 0.5);
 	display: inline-block;
 }
 span
 {
 	font-weight: bold;
+	font-size: 1em;
 }
 aside
 {
@@ -341,9 +342,8 @@ aside
 	background-color: white;
 	display: flex;
 	width: calc(100%-30px);
-	height:130px;
-	padding: 5px;
-	margin: 15px;
+	height:25%;
+	margin: 5%;
 	border-radius: 20px;
 	box-shadow:  2px 2px 2px rgba(128,128,128,0.1)
 }
@@ -351,42 +351,55 @@ aside
 {
 	background-image: url(image_hebergement/7.jpg);
 	width: 42%;
-	height: 100%;
+	height: auto;
 	background-size: cover;
 	background-position: center;
 	border-radius: 15px 0 0 15px;
 	position: relative;
+	display: inline-block;
+	margin: 5px;
 }
 #p8 a
 {
 	background-image: url(image_hebergement/8.jpg);
 	width: 42%;
-	height: 100%;
+	height: auto;
 	background-size: cover;
 	background-position: center;
 	border-radius: 15px 0 0 15px;
 	position: relative;
+	display: inline-block;
+	margin: 5px;
 }
 
 #p9 a
 {
 	background-image: url(image_hebergement/9.jpg);
 	width: 42%;
-	height: 100%;
+	height: auto;
 	background-size: cover;
 	background-position: center;
 	border-radius: 15px 0 0 15px;
 	position: relative;
+	display: inline-block;
+	margin:5px;
+
 }	
 #block-descript7, #block-descript8, #block-descript9
 {
 	color: black;
 	background-color: white;
-	position: relative;
-	right: -115%;
-	padding-top: 15%;
+	display: inline-block;
 	border-radius: 0 15px 15px 0;
-	height: 80%;
+	width: 110%;
+	padding: 5%;
+	height: 85%;
+	position: relative;
+	left: 100%;
+}
+.txt
+{
+	margin-top: 4%;
 }
 .etoile-pleine2
 {
@@ -394,15 +407,16 @@ aside
 	padding: 1px;
 	margin:0px 0px 0px 8px;
 	display: inline-block;
+	height: auto;
 	position: relative;
-	top: 30px;
+	top: 15%;
+	margin-top: 12%;
 }
 .etoile-vide2
 {
-	color: #F2F2F2;
+	color: rgba(144, 148, 151, 0.5);
+	width: 11%;
 	display: inline-block;
-	position: relative;
-	top: 30px;
 }
 #titre_populaires
 {
@@ -750,18 +764,16 @@ footer a
 	{
 		width: 100%;
 		height: 30vh;
-		margin: 2% 2% 2% 2%;
+		margin: 2% 5% 2% 5%;
 		box-shadow:  2px 2px 2px rgba(128,128,128,0.1);
 	}
 	.description
 	{
 		top:86%;
 		font-size: 1.3em;
-		border: 5px red solid;
 	}
 	.description .etoile-pleine, .description .etoile-vide
 	{
-		border: 5px green solid;
 		top: 20%;
 	}
 	#p1 a, #p2 a, #p3 a, #p4 a, #p5 a, #p6 a
@@ -803,14 +815,24 @@ footer a
 	#block-descript7, #block-descript8, #block-descript9
 	{
 	font-size: 1.3em;
-	left: 114%;
+	left: 100%;
 	width: 100%;
-	border:5px red solid;
 	}
-	#block-descript7 .etoile-pleine2, #block-descript7 .etoile-vide2, #block-descript8 .etoile-pleine2, #block-descript8 .etoile-vide2, #block-descript9 .etoile-pleine2, #block-descript9 .etoile-vide2
+	#block-descript8 .etoile-pleine2, #block-descript9 .etoile-pleine2
 	{
-		border:5px green solid;
-		top: 45%;
+		top: 15%;
+	}
+	#block-descript7 .etoile-pleine2
+	{
+		top:31%;
+	}
+	.txt
+	{
+		font-size: 1.2em;
+	}
+	span
+	{
+		font-size: 1.3em;
 	}
 /*activités à Marseille*/
 	#ancre_activites

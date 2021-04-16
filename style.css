@@ -755,8 +755,14 @@ footer a
 	}
 	.description
 	{
-		font-size: 1.7em;
 		top:86%;
+		font-size: 1.3em;
+		border: 5px red solid;
+	}
+	.description .etoile-pleine, .description .etoile-vide
+	{
+		border: 5px green solid;
+		top: 20%;
 	}
 	#p1 a, #p2 a, #p3 a, #p4 a, #p5 a, #p6 a
 	{
@@ -796,9 +802,15 @@ footer a
 	}
 	#block-descript7, #block-descript8, #block-descript9
 	{
-	font-size: 1.7em;
-	left: 110%;
+	font-size: 1.3em;
+	left: 114%;
 	width: 100%;
+	border:5px red solid;
+	}
+	#block-descript7 .etoile-pleine2, #block-descript7 .etoile-vide2, #block-descript8 .etoile-pleine2, #block-descript8 .etoile-vide2, #block-descript9 .etoile-pleine2, #block-descript9 .etoile-vide2
+	{
+		border:5px green solid;
+		top: 45%;
 	}
 /*activités à Marseille*/
 	#ancre_activites
@@ -840,8 +852,16 @@ footer a
 	{
 		width: 100%;
 		height: 30vh;
-		font-size: 1.8em;
+		font-size: 1.5em;
 		margin: 3% 0 3% 0;
+	}
+	#photo10 a, #photo13 a
+	{
+		height: 65%;
+	}
+	#block-descript10, #block-descript13
+	{
+		top:120%;
 	}
 /*Footer*/
 	footer

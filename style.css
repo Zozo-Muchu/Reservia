@@ -28,34 +28,30 @@ header
 	display: flex;
 	justify-content: space-between;
 }
-#titre_principal
-{
-	display: flex;
-	position: relative;
-	width: 20%;
-	height:auto;
-	margin-left: 1.4%;
-}
 #logo
 {
-	width: 35%;
+	width: 20%;
 	height: auto;
 	margin: auto;
-
+	display: flex;
+	position: relative;
+	right: 97%;
+	top:50%;
+	float: left;
 }
 nav
 {
 	display: flex;
 	position: relative;
 	justify-content: flex-end;
-	width: 80%;
+	width: 100%;
 	height: auto;
-	margin: 0 0 0 10%;
-	padding: 1% 0 0 0;
 }
 nav ul
 {
 	list-style-type: none;
+	width: 50%;
+	height: auto;
 
 }
 #nav-hebergement
@@ -64,6 +60,8 @@ nav ul
 	margin-right: 18px;
 	font-size: 1em;
 	padding-top: 18%;
+	display: flex;
+	margin-top: 20%;
 }
 #nav-activite
 {
@@ -71,8 +69,9 @@ nav ul
 	margin-left:18px; 
 	margin-right:18px;
 	font-size: 1em;
-	padding: 0;
 	padding-top: 18%;
+	display: flex;
+	margin-top: 20%;
 }
 #nav-inscrire
 {
@@ -80,8 +79,9 @@ nav ul
 	margin-left: 18px;
 	margin-right:36px;
 	font-size: 1em;
-	padding: 0;
 	padding-top: 18%;
+	display: flex;
+	margin-top: 20%;
 }
 nav li
 {
@@ -138,6 +138,10 @@ nav li
 	padding: 10px;
 	margin: 0%;
 	border-radius: 0px 10px 10px 0px;
+}
+#bouton-recherche2
+{
+	display: none;
 }
 .survol:hover
 {
@@ -400,6 +404,8 @@ aside
 .txt
 {
 	margin-top: 4%;
+	width: 100%;
+	height: 80%;
 }
 .etoile-pleine2
 {
@@ -408,9 +414,7 @@ aside
 	margin:0px 0px 0px 8px;
 	display: inline-block;
 	height: auto;
-	position: relative;
-	top: 15%;
-	margin-top: 12%;
+
 }
 .etoile-vide2
 {
@@ -619,40 +623,70 @@ footer a
 	header
 	{
 		width: 100%;
-		height: auto;
+		height: 150px;
 		margin:auto;
-		border: 5px black solid;
-	}
-	#titre_principal
-	{
-		border: 5px red solid;
 	}
 	#logo
 	{
-		border: 5px blue solid;
-		width: 95%;
+		width: 30%;
 		height: auto;
+		right: 8%;
+		display: flex;
 	}
 	nav
 	{
-		border: 5px yellow solid;
+		display: flex;
+		width: 100%;
+		height:;
+	}
+	nav ul
+	{
+		width: 100%;
+		height: auto;
+		margin: 0;
+	}
+	nav li
+	{
+		display: flex;
+		clear: both;
+		width: 30%;
+		height: auto;
+		margin-left: -8%;
+		position: relative;
 	}
 	#nav-hebergement, #nav-activite, #nav-inscrire
 	{
-		border: 4px green solid;
 		font-size: 1.4em;
+		margin: 0;
+		position: relative;	
+	}
+	#nav-hebergement
+	{
+		margin:0;
+		padding:0 30% 20% 30%;
+		bottom: -25px;
+	}
+	 #nav-activite
+	{
+		left:184%;
+		bottom: 20px;
+		margin:0;
+		padding:0 50% 20% 50%;
 	}
 	#nav-inscrire
 	{
 		color:#0065FC;
 		font-weight: bold;
+		bottom: 135px;
+		left: 220%;
+		
 	}
-	#nav-hebergement: hover, #nav-activite: hover
+	#nav-hebergement:hover, #nav-activite:hover
 	{
-	color:#0065FC;
-	font-weight: bold;
+	border-top: 3px white solid;
 	border-bottom:3px #0065FC solid;
-}
+	}
+
 /*Recherche*/
 .recherche
 {
@@ -661,20 +695,17 @@ footer a
 }
 .recherche h2
 {
-	font-size: 3em;
-	border:5px red solid;
+	font-size: 2em;
 	margin: 2%;
 	
 }
 .recherche h3
 {
-	border: 5px green solid;
 	margin: 2%;
-	font-size: 1.6em;
+	font-size: 1.5em;
 }
 #formulaire1
 {
-	border: 5px blue solid;
 	width: 100%;
 	height: auto;
 	margin: 2%;
@@ -683,49 +714,80 @@ footer a
 {
 	font-size: 3em;
 	display: inline-block;
-	border:2px red solid;
 }
 #recherche_ville
 {
-	width: 38%;
-	height: 3.3em;
+	width: 50%;
+	height: 3em;
 	display:inline-block;
-	border:2px red solid;
 	position: relative;
-	top: -10px;
+	top: -8px;
 }
 #bouton-recherche
 {
+	display: none;
+}
+#bouton-recherche2
+{
+	display: initial;
+	background-color:#0065FC;
+	color: white; 
+	border:none;
+	padding: 10px;
+	margin: 0%;
+	border-radius: 0px 10px 10px 0px;
 	font-size: 3em;
-	border: 2px red solid;
 	position: relative;
 	top: -1px;
 	left: -4px;
+	border-radius: 20px;
 }
 #filtres
 {
-	font-size: 1.6em;
-	width: 15%;
+	font-size: 2em;
+	width: 20%;
 	height: auto;
 }
 #formulaire2
 {
-	border:5px blue solid;
+	width: 85%;
+	height: 200px;
 	display: flex;
 	flex-direction: column;
 	align-items: right;
 }
+#eco, #romantique, #animaux, #familial
+{
+	font-size: 2em;
+}
 #familial
 {
 	align-self: flex-end;
+	position: relative;
+	top: -70px;
+	left: 10%;
 }
-#eco, #romantique, #animaux, #familial
+#eco, #romantique, #animaux
 {
-	width: 35%;
-	height: auto;
-	font-size: 1.6em;
+	align-self: flex-start;
 }
-
+#eco
+{
+	position: relative;
+}
+#romantique, #animaux
+{
+	position: relative;
+	top: -70px;
+}
+.recherche p
+{
+	font-size: 1.2em;
+}
+#eco input, #romantique input, #animaux input, #familial input
+{ 
+	font-size: 0.8em;
+}
 /*hebergement à Marseille*/		
 	#ancre_hebergement
 	{
@@ -765,12 +827,12 @@ footer a
 		width: 100%;
 		height: 30vh;
 		margin: 2% 5% 2% 5%;
-		box-shadow:  2px 2px 2px rgba(128,128,128,0.1);
+		box-shadow:  2px 2px 2px rgba(128,128,128,0.5);
 	}
 	.description
 	{
 		top:86%;
-		font-size: 1.3em;
+		font-size: 1.1em;
 	}
 	.description .etoile-pleine, .description .etoile-vide
 	{
@@ -811,20 +873,20 @@ footer a
 		width: calc(100%-30px);
 		height: 26vh;
 		margin:15px;
+		box-shadow:  2px 2px 2px rgba(128,128,128,0.5)
 	}
 	#block-descript7, #block-descript8, #block-descript9
 	{
-	font-size: 1.3em;
+	font-size: 1em;
 	left: 100%;
 	width: 100%;
 	}
-	#block-descript8 .etoile-pleine2, #block-descript9 .etoile-pleine2
+	#p7 .etoile-pleine2, #p8 .etoile-pleine2, #p9 .etoile-pleine2
 	{
-		top: 15%;
-	}
-	#block-descript7 .etoile-pleine2
-	{
-		top:31%;
+		font-size: 1.3em;
+		top: 0;
+		margin-top: 0;
+		justify-content: flex-end;
 	}
 	.txt
 	{
@@ -870,12 +932,13 @@ footer a
 	{
 		bottom: 0px;
 	}
-	#photo10, #photo11, #photo11, #photo12, #photo13, #photo14, #photo15
+	#photo10, #photo11, #photo12, #photo13, #photo14, #photo15
 	{
 		width: 100%;
 		height: 30vh;
-		font-size: 1.5em;
+		font-size: 1.1em;
 		margin: 3% 0 3% 0;
+		box-shadow:  2px 2px 2px rgba(128,128,128,0.5)
 	}
 	#photo10 a, #photo13 a
 	{
@@ -893,7 +956,7 @@ footer a
 		margin: auto;
 		display: flex;
 		flex-direction: column;
-		font-size:1.8em; 
+		font-size:1.4em; 
 	}
 	#propos, #nos_hebergement, #assistance
 	{

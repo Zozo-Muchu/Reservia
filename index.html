@@ -13,11 +13,12 @@
 <body>
 	<div id="bloc_page">
 		<header>
-			<div id="titre_principal">
-				<h1><img src="image_logo/reservia.png" alt="reservia_logo" id="logo"></h1>
-			</div>
+			
+				
+			
 			<nav>
 				<ul id="navigation">
+				<h1><img src="image_logo/reservia.png" alt="reservia_logo" id="logo"></h1>
 					<li><a href="#ancre_hebergement" id="nav-hebergement"> Hébergements</a></li>
 					<li><a href="#ancre_activites" id="nav-activite"> Activités</a></li>
 					<li><a href="#" id="nav-inscrire"> S'inscrire</a></li>
@@ -30,7 +31,8 @@
 			<h3> En plein centre ville ou en pleine nature</h3>
 				<form method="post" action="traitement.php" id="formulaire1">
 						<i class="fas fa-map-marker-alt" id="logo-map"></i><input type="text" name="recherche" id="recherche_ville" placeholder="Marseille, France">
-						<input type="submit" value="Rechercher" id="bouton-recherche" class="survol1">
+						<input type="submit" value="Rechercher" class="survol1" id="bouton-recherche">
+						<button id="bouton-recherche2"><i class="fas fa-search"></i></button>
 				</form>
 			<h2 id="filtres"> Filtres</h2>
 				<form method="post" action="traitement.php" id="formulaire2">

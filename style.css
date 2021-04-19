@@ -712,13 +712,15 @@ footer a
 }
 #logo-map
 {
-	font-size: 3em;
+	font-size: 1.9em;
 	display: inline-block;
+	position: relative;
+	top: -4px;
 }
 #recherche_ville
 {
-	width: 50%;
-	height: 3em;
+	width: 65%;
+	height: 2em;
 	display:inline-block;
 	position: relative;
 	top: -8px;
@@ -734,9 +736,9 @@ footer a
 	color: white; 
 	border:none;
 	padding: 10px;
-	margin: 0%;
+	margin: -5%;
 	border-radius: 0px 10px 10px 0px;
-	font-size: 3em;
+	font-size: 2em;
 	position: relative;
 	top: -1px;
 	left: -4px;

@@ -36,8 +36,8 @@ header
 	margin: auto;
 	display: flex;
 	position: relative;
-	right: 11%;
-	top:50%;
+	right: 22%;
+	top:30%;
 	float: left;
 }
 nav
@@ -51,47 +51,53 @@ nav
 nav ul
 {
 	list-style-type: none;
-	width: 50%;
+	width: 80%;
 	height: auto;
 }
 #nav-hebergement
 {
 	color: black;
-	margin-right: 18px;
-	font-size: 1em;
-	padding-top: 18%;
+	font-size: 1.1em;
+	padding-top: 20px;
 	display: flex;
-	margin-top: 20%;
 	border-top:3px solid transparent;
 }
 #nav-activite
 {
 	color: black;
-	margin-left:18px; 
-	margin-right:18px;
-	font-size: 1em;
-	padding-top: 18%;
+	font-size: 1.1em;
+	padding-top: 20px;
+	margin-left: 20px;
 	display: flex;
-	margin-top: 20%;
 	border-top:3px solid transparent;
 }
 #nav-inscrire
 {
 	color: #0065FC;
-	margin-left: 18px;
-	margin-right:36px;
-	font-size: 1em;
-	padding-top: 18%;
+	font-size: 1.1em;
+	padding-top: 20px;
+	margin-left: 20px;
 	display: flex;
-	margin-top: 20%;
 	font-weight: bold;
-
-}
-nav li
-{
 	display: inline-block;
 	position: relative;
-	right: -40%;
+	top:2px;
+}
+#h-a-i
+{
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-end;
+	margin-top: 5%;
+	margin-right:  5%;
+	align-items: center;
+}
+#hebergment-activite
+{
+	width: 40%;
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-end;
 }
 #nav-activite:hover, #nav-hebergement:hover
 {
@@ -641,9 +647,9 @@ footer a
 /*header*/
 	#logo
 	{
-		width: 50%;
+		width: 20%;
 		top:1%;
-		left: 7%;
+		left: -1%;
 	}
 	nav ul
 	{
@@ -655,9 +661,14 @@ footer a
 		justify-content: flex-end;
 		padding: 5%;
 		justify-content: space-between;
-		right: -9%;
+		position: relative;
+		left: 10%;
 	}
-
+	#hebergment-activite
+	{
+		position: relative;
+		left: 50px;
+	}
 	#nav-hebergement, #nav-activite, #nav-inscrire
 	{
 		border-bottom: 3px solid transparent;
@@ -752,14 +763,11 @@ footer a
 	{
 		display: flex;
 		flex-direction: column;
-		border: 2px green solid;
-
 	}
 	#hebergement2
 	{
 		display: flex;
 		flex-direction: column;
-		border: 2px red solid;
 	}
 	#p1, #p2, #p3, #p4, #p5, #p6
 	{
@@ -838,74 +846,80 @@ footer a
 	header
 	{
 		width: 100%;
-		height: 150px;
+		height: 160px;
 		margin:auto;
 	}
 	#logo
 	{
-		width: 40%;
+		width: 20%;
 		height: auto;
-		left: 10%;
-		position: relative;
-		top: -10px;
+		left: 5%;
+		top: 2%;
 	}
 	nav
 	{
-		display: flex;
 		width: 100%;
-		height:auto;
+		height:160px;
 	}
 	nav ul
 	{
 		width: 100%;
-		height: auto;
+		padding: 0;
 		margin: 0;
+		justify-content: flex-start;
 	}
 	nav li
 	{
-		display: flex;
-		clear: both;
-		width: 30%;
-		height: auto;
-		margin-left: -8%;
+		margin: 0;
 		position: relative;
+		top: 55%;
 	}
 	#nav-hebergement, #nav-activite, #nav-inscrire
 	{
 		font-size: 1.4em;
-		margin: 0;
-		position: relative;	
-	}
-	#nav-hebergement
-	{
-		margin:0;
-		padding:0 30% 20% 30%;
-		top: 100px;
-		right: 360%;
-	}
-	 #nav-activite
-	{
-		left:184%;
-		bottom: 20px;
-		margin:0;
-		padding:0 50% 20% 50%;
-		top:65px;
-		left: 1%;
-	}
-	#nav-inscrire
-	{
-		color:#0065FC;
-		font-weight: bold;
-		bottom: 60px;
-		left: 170%;
-		
 	}
 	#nav-hebergement:hover, #nav-activite:hover
 	{
-	border-top: 3px white solid;
 	border-bottom:3px #0065FC solid;
+	border-top: 3px transparent solid;
 	}
+	#h-a-i
+	{
+		width: 100%;
+		height: 50%;
+		padding: 0;
+	}
+	#hebergment-activite
+	{
+		width: 100%;
+		height: auto;
+	}
+	#nav-inscrire
+	{
+		position: relative;
+		top:-105px;
+	}
+	#nav-hebergement, #nav-activite
+	{
+		padding-bottom: 20px;
+		padding-top: 0;
+		margin: 0;
+		width: 47vw;
+		position: relative;
+		left: 30%;
+		border-top:3px solid transparent;
+		border-bottom:3px solid transparent;
 
+	}
+	#nav-hebergement
+	{
+		display: flex;
+		justify-content: center;
+	}
+	#nav-activite
+	{
+		justify-content: center;
+	}
 /*Recherche*/
 .recherche
 {
@@ -1015,9 +1029,9 @@ footer a
 /*hebergement à Marseille*/		
 	#ancre_hebergement
 	{
-		width: 100%;
+		width: calc(100% - 30px);
 		height: auto;
-		margin-right: auto;
+		margin:15px;
 		display: flex;
 		flex-direction: column-reverse;
 	}
@@ -1025,26 +1039,25 @@ footer a
 	{
 		width: 100%;
 		height: auto;
-		margin: auto;
+		margin: 0;
 		display: flex;
 		flex-direction: column;
 		background-color: white;
 		padding: 0;
-		border: 2px green solid;
 	}
 	#hebergement1, #hebergement2
 	{
 		width: 100%;
 		height: auto;
 		margin: 0;
+		padding: 0;
 		display: flex;
 		flex-direction: column;
 		background-color: white;
-
 	}
 	#titre_hebergement
 	{
-		font-size: 1.8em;
+		font-size: 1.6em;
 		background-color: white;
 		margin-left: 5%;
 	}
@@ -1085,7 +1098,7 @@ footer a
 	}
 	#titre_populaires
 	{
-		font-size: 1.8em;
+		font-size: 1.6em;
 		width: 70%;
 		margin-left: 5%;
 	}
@@ -1137,12 +1150,11 @@ footer a
 		margin: 0;
 		display: flex;
 		flex-direction: column;
-		border: 2px red solid;
 	}
 	#ancre_activites h2
 	{
-		font-size: 2.3em;
-		margin-left: 5%;
+		font-size: 1.6em;
+		margin-left: 10%;
 	}
 	#photo10, #photo11x12, #photo13, #photo14x15
 	{

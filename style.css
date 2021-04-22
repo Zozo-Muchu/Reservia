@@ -1,7 +1,8 @@
 
 #bloc_page
 {
-	width: 980px;
+	width: 100%;
+	max-width: 980px;
 	margin:auto;
 }
 .recherche, #ancre_hebergement, #ancre_activites
@@ -35,7 +36,7 @@ header
 	margin: auto;
 	display: flex;
 	position: relative;
-	right: 97%;
+	right: 11%;
 	top:50%;
 	float: left;
 }
@@ -52,7 +53,6 @@ nav ul
 	list-style-type: none;
 	width: 50%;
 	height: auto;
-
 }
 #nav-hebergement
 {
@@ -62,6 +62,7 @@ nav ul
 	padding-top: 18%;
 	display: flex;
 	margin-top: 20%;
+	border-top:3px solid transparent;
 }
 #nav-activite
 {
@@ -72,26 +73,31 @@ nav ul
 	padding-top: 18%;
 	display: flex;
 	margin-top: 20%;
+	border-top:3px solid transparent;
 }
 #nav-inscrire
 {
-	color: black;
+	color: #0065FC;
 	margin-left: 18px;
 	margin-right:36px;
 	font-size: 1em;
 	padding-top: 18%;
 	display: flex;
 	margin-top: 20%;
+	font-weight: bold;
+
 }
 nav li
 {
 	display: inline-block;
+	position: relative;
+	right: -40%;
 }
-#nav-activite:hover, #nav-hebergement:hover, #nav-inscrire:hover
+#nav-activite:hover, #nav-hebergement:hover
 {
 	color:#0065FC;
 	font-weight: bold;
-	border-top:3px #0065FC solid;
+	border-color: #0065FC;
 }
 /*section recherche*/
 .recherche
@@ -139,6 +145,10 @@ nav li
 	margin: 0%;
 	border-radius: 0px 10px 10px 0px;
 }
+#bouton-recherche:hover
+{
+	cursor: pointer;
+}
 #bouton-recherche2
 {
 	display: none;
@@ -146,6 +156,7 @@ nav li
 .survol:hover
 {
 	color: #0065FC;
+	cursor: pointer;
 }
 #filtres
 {
@@ -229,7 +240,6 @@ nav li
 #hebergement1, #hebergement2
 {
 	display: flex;
-	position: relative;
 	justify-content: space-around;
 	width: 100%;
 	height: 210px;
@@ -345,11 +355,12 @@ aside
 {
 	background-color: white;
 	display: flex;
-	width: calc(100%-30px);
-	height:25%;
+	width: calc(100% - 30px);
+	height:26%;
 	margin: 5%;
 	border-radius: 20px;
 	box-shadow:  2px 2px 2px rgba(128,128,128,0.1)
+
 }
 #p7 a
 {
@@ -428,7 +439,7 @@ aside
 	display: inline-block;
 	width: 70%;
 	height: auto;
-	margin: 5%;
+	margin: 0%;
 }
 #logo-pop
 {
@@ -458,12 +469,18 @@ aside
 {
 	width: 95%;
 	height: auto;
-	padding:20px 0 20px 0;
+	margin-top: 2%;
+}
+#ancre_activites h2
+{
+	margin-left: 2%;
 }
 #block-activite
 {
 	display:flex;
 	justify-content: space-between;
+	margin: 5px;
+	padding: 0 0 5% 0;
 }
 #photo11x12, #photo14x15
 {
@@ -475,6 +492,10 @@ aside
 	width: 23%;
 	height: auto;
 	display: flex;
+}
+#photo11, #photo14
+{
+	margin-bottom: 5%;
 }
 #photo11, #photo12, #photo14, #photo15
 {
@@ -608,8 +629,202 @@ footer a
 {
 	color: black;
 }
+/* Media queries Tablette*/
+@media screen and (max-width: 1200px) and (min-width: 769px)
+{
+	#bloc_page
+	{
+		width: 100%;
+		height: auto;
+		margin: auto;
+	}
+/*header*/
+	#logo
+	{
+		width: 50%;
+		top:1%;
+		left: 7%;
+	}
+	nav ul
+	{
+		font-size: 1.5em;
+		width: 100%;
+	}
+	nav li
+	{
+		justify-content: flex-end;
+		padding: 5%;
+		justify-content: space-between;
+		right: -9%;
+	}
 
-/*Media queries*/
+	#nav-hebergement, #nav-activite, #nav-inscrire
+	{
+		border-bottom: 3px solid transparent;
+		width: 100%;
+		position: relative;
+		justify-content: center;
+		padding-top: 0;
+		padding-bottom: 15px;
+		margin: 0;
+	}
+	#nav-activite:hover, #nav-hebergement:hover
+	{
+		border-bottom-color: #0065FC;
+		border-top-color: transparent;
+	}
+/*recherche*/
+	.recherche h2
+	{
+		font-size: 1.7em;
+	}
+	.recherche h3
+	{
+		font-size: 1.5em;
+	}
+	#formulaire1
+	{
+		width: 80%;
+	}
+	#logo-map
+	{
+		font-size: 1.5em;
+	}
+	#recherche_ville
+	{
+		width: 50%;
+		height: 1.71em;
+		position: relative;
+		top: -3px;
+	}
+	#bouton-recherche
+	{
+		font-size: 1.7em;
+		position: relative;
+		right:1%;
+	}
+	#filtres
+	{
+		font-size: 1.6em;
+	}
+	#eco, #familial, #romantique, #animaux
+	{
+		font-size: 1.1em;
+	}
+	#eco input, #familial input, #romantique input, #animaux input
+	{
+		font-size: 1.3em;
+		border-radius: 20px;
+	}
+	.recherche p
+	{
+		font-size: 1.3em;
+	}
+/*hébergement*/
+	#ancre_hebergement
+	{
+		width: 100%;
+		height: 830px;
+	}
+	#hebergement_marseille
+	{
+		margin:0;
+		margin: 1%;
+		width: calc(62% - 2%);
+		font-size: 1.2em;
+	}
+	#h1-h2
+	{
+		display: flex;
+		flex-direction: row;
+		width: calc(100% - 2%);
+		padding: 1%;
+	}
+	#hebergement1, #hebergement2
+	{
+		width: calc(50% - 2%);
+		height: 650px;
+		margin: 1%;
+		justify-content:space-between; 
+		font-size: 1.1em;
+	}
+	#hebergement1
+	{
+		display: flex;
+		flex-direction: column;
+		border: 2px green solid;
+
+	}
+	#hebergement2
+	{
+		display: flex;
+		flex-direction: column;
+		border: 2px red solid;
+	}
+	#p1, #p2, #p3, #p4, #p5, #p6
+	{
+		width: 100%;
+		height:23vh;
+		padding: 0;
+		font-size: 1.1em;
+	}
+/*Aside*/
+	aside
+	{	
+		width: calc(38% - 2%);
+		margin: 1%;
+	}
+	#titre_populaires
+	{
+		left: 5%;
+		font-size: 1.2em;
+		position: relative;
+		top:1%;
+	}
+	#logo-pop
+	{
+		position: relative;
+		font-size: 1.5em;
+		left: 12%;
+		top:1%;
+	}
+	#p7, #p8, #p9
+	{
+		font-size: 1.4em;
+		height: 23vh;
+		position: relative;
+		top: 1%;
+	}
+	#afficher_plus
+	{
+		font-size: 1.1em;
+	}
+/*Activité*/
+	#ancre_activites
+	{
+		width: 100%;
+		font-size: 1.2em;
+	}
+	#photo11, #photo12, #photo14, #photo15
+	{
+		width: 100%;
+		height: 25vh;
+	}
+	#block-descript10, #block-descript11, #block-descript12, #block-descript13, #block-descript14, #block-descript15
+	{
+		font-size: 1.2em;
+	}
+/*footer*/
+	footer h2
+	{
+		font-size: 1.4em;
+	}
+	footer li
+	{
+		font-size: 1.3em;
+	}
+}
+/*Media queries Mobile*/
 
 @media screen and (max-width: 768px)
 {
@@ -628,16 +843,17 @@ footer a
 	}
 	#logo
 	{
-		width: 30%;
+		width: 40%;
 		height: auto;
-		right: 8%;
-		display: flex;
+		left: 10%;
+		position: relative;
+		top: -10px;
 	}
 	nav
 	{
 		display: flex;
 		width: 100%;
-		height:;
+		height:auto;
 	}
 	nav ul
 	{
@@ -664,7 +880,8 @@ footer a
 	{
 		margin:0;
 		padding:0 30% 20% 30%;
-		bottom: -25px;
+		top: 100px;
+		right: 360%;
 	}
 	 #nav-activite
 	{
@@ -672,13 +889,15 @@ footer a
 		bottom: 20px;
 		margin:0;
 		padding:0 50% 20% 50%;
+		top:65px;
+		left: 1%;
 	}
 	#nav-inscrire
 	{
 		color:#0065FC;
 		font-weight: bold;
-		bottom: 135px;
-		left: 220%;
+		bottom: 60px;
+		left: 170%;
 		
 	}
 	#nav-hebergement:hover, #nav-activite:hover
@@ -744,6 +963,10 @@ footer a
 	left: -4px;
 	border-radius: 20px;
 }
+#bouton-recherche2:hover
+{
+	cursor: pointer;
+}
 #filtres
 {
 	font-size: 2em;
@@ -756,7 +979,6 @@ footer a
 	height: 200px;
 	display: flex;
 	flex-direction: column;
-	align-items: right;
 }
 #eco, #romantique, #animaux, #familial
 {
@@ -808,10 +1030,11 @@ footer a
 		flex-direction: column;
 		background-color: white;
 		padding: 0;
+		border: 2px green solid;
 	}
 	#hebergement1, #hebergement2
 	{
-		width: 95%;
+		width: 100%;
 		height: auto;
 		margin: 0;
 		display: flex;
@@ -823,12 +1046,13 @@ footer a
 	{
 		font-size: 1.8em;
 		background-color: white;
+		margin-left: 5%;
 	}
 	#p1, #p2, #p3, #p4, #p5, #p6
 	{
-		width: 100%;
+		width: calc(100% - 30px);
 		height: 30vh;
-		margin: 2% 5% 2% 5%;
+		margin: 2% 15px 2% 15px;
 		box-shadow:  2px 2px 2px rgba(128,128,128,0.5);
 	}
 	.description
@@ -863,6 +1087,7 @@ footer a
 	{
 		font-size: 1.8em;
 		width: 70%;
+		margin-left: 5%;
 	}
 	#logo-pop
 	{
@@ -872,7 +1097,7 @@ footer a
 	}
 	#p7, #p8, #p9
 	{
-		width: calc(100%-30px);
+		width: calc(100% - 30px);
 		height: 26vh;
 		margin:15px;
 		box-shadow:  2px 2px 2px rgba(128,128,128,0.5)
@@ -907,21 +1132,23 @@ footer a
 	}
 	#block-activite
 	{
-		width: calc(100%-30px);
+		width: 100%;
 		height: auto;
-		margin: 15px;
+		margin: 0;
 		display: flex;
 		flex-direction: column;
+		border: 2px red solid;
 	}
 	#ancre_activites h2
 	{
 		font-size: 2.3em;
+		margin-left: 5%;
 	}
 	#photo10, #photo11x12, #photo13, #photo14x15
 	{
 		width: 100%;
 		height: auto;
-		margin: auto;
+		margin: 0;
 		display: flex;
 		justify-content: center;
 
@@ -936,10 +1163,10 @@ footer a
 	}
 	#photo10, #photo11, #photo12, #photo13, #photo14, #photo15
 	{
-		width: 100%;
-		height: 30vh;
+		width: calc(100% - 30px);
+		height: 26vh;
 		font-size: 1.1em;
-		margin: 3% 0 3% 0;
+		margin: 3% 15px 3% 15px;
 		box-shadow:  2px 2px 2px rgba(128,128,128,0.5)
 	}
 	#photo10 a, #photo13 a

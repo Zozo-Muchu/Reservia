@@ -1,4 +1,3 @@
-
 #bloc_page
 {
 	width: 100%;
@@ -31,13 +30,12 @@ header
 }
 #logo
 {
-	width: 20%;
+	width: 12%;
 	height: auto;
-	margin: auto;
+	margin:auto;
 	display: flex;
 	position: relative;
-	right: 22%;
-	top:30%;
+	right: 10%;
 	float: left;
 }
 nav
@@ -51,8 +49,16 @@ nav
 nav ul
 {
 	list-style-type: none;
-	width: 80%;
+	width: 60%;
 	height: auto;
+}
+nav li
+{
+	display: inline-flex;
+	justify-content: flex-end;
+	position: relative;
+	left: 50%;
+
 }
 #nav-hebergement
 {
@@ -82,22 +88,6 @@ nav ul
 	display: inline-block;
 	position: relative;
 	top:2px;
-}
-#h-a-i
-{
-	display: flex;
-	flex-direction: row;
-	justify-content: flex-end;
-	margin-top: 5%;
-	margin-right:  5%;
-	align-items: center;
-}
-#hebergment-activite
-{
-	width: 40%;
-	display: flex;
-	flex-direction: row;
-	justify-content: flex-end;
 }
 #nav-activite:hover, #nav-hebergement:hover
 {
@@ -649,7 +639,7 @@ footer a
 	{
 		width: 20%;
 		top:1%;
-		left: -1%;
+		left: 2%;
 	}
 	nav ul
 	{
@@ -664,7 +654,7 @@ footer a
 		position: relative;
 		left: 10%;
 	}
-	#hebergment-activite
+	.hebergment-activite
 	{
 		position: relative;
 		left: 50px;
@@ -853,8 +843,8 @@ footer a
 	{
 		width: 20%;
 		height: auto;
-		left: 5%;
-		top: 2%;
+		left: 3%;
+		bottom: 25%;
 	}
 	nav
 	{
@@ -883,42 +873,45 @@ footer a
 	border-bottom:3px #0065FC solid;
 	border-top: 3px transparent solid;
 	}
-	#h-a-i
-	{
-		width: 100%;
-		height: 50%;
-		padding: 0;
-	}
-	#hebergment-activite
+	#nav-hebergement, #nav-activite
 	{
 		width: 100%;
 		height: auto;
+		display: flex;
+		justify-content: center;
+		border-bottom:3px transparent solid;
+		border-top: 3px transparent solid;
 	}
-	#nav-inscrire
+	 #nav-activite
+	 {
+	 	margin-left: 0;
+	 }
+	#li-inscrire
 	{
 		position: relative;
-		top:-105px;
+		top: -75%;
+		left: 70%;
 	}
-	#nav-hebergement, #nav-activite
+	#li-hebergement, #li-activite
 	{
 		padding-bottom: 20px;
 		padding-top: 0;
 		margin: 0;
 		width: 47vw;
-		position: relative;
-		left: 30%;
-		border-top:3px solid transparent;
-		border-bottom:3px solid transparent;
-
-	}
-	#nav-hebergement
-	{
 		display: flex;
 		justify-content: center;
+		position: relative;
+		border-top:3px solid transparent;
+		border-bottom:3px solid transparent;
 	}
-	#nav-activite
+	#li-hebergement
 	{
-		justify-content: center;
+		left: -26%;
+	}
+	#li-activite
+	{
+		top: 11%;
+		left: 39%;
 	}
 /*Recherche*/
 .recherche
